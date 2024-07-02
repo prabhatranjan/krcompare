@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, X, Info } from 'lucide-react';
 
+
+// eslint-disable-next-line react/prop-types
 const FeatureCell = ({ feature }) => (
   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 relative group">
     <div className="flex items-center">
+      {/* eslint-disable-next-line react/prop-types */}
       {feature.name}
       <span className="ml-1 text-[#1B57D9] cursor-help">
         <Info size={16} />
       </span>
     </div>
     <div className="absolute z-10 invisible group-hover:visible bg-[#1B57D9] text-white text-xs rounded p-2 bottom-full left-1/2 transform -translate-x-1/2 mb-1 w-64">
+      {/* eslint-disable-next-line react/prop-types */}
       {feature.description}
       <svg className="absolute text-[#1B57D9] h-2 w-full left-0 top-full" x="0px" y="0px" viewBox="0 0 255 255">
         <polygon className="fill-current" points="0,0 127.5,127.5 255,0"/>
@@ -99,7 +103,10 @@ const ComparisonDashboard = () => {
     },
   };
 
-  const ComparisonTable = ({ category }) => (
+
+ 
+  // eslint-disable-next-line react/prop-types
+  const ComparisonTable = ({category}) => (
     <div className="overflow-x-auto">
       {featureCategories.map((featureCategory, index) => (
         <div key={index} className="mb-8">
@@ -134,11 +141,12 @@ const ComparisonDashboard = () => {
       ))}
     </div>
   );
+  
 
   return (
     <div className="container mx-auto p-4 bg-white">
       <div className="flex items-center mb-6">
-        <img src="/api/placeholder/200/60" alt="KeyReply Logo" className="mr-4" />
+        <img src="/logo.png" alt="KeyReply Logo" className="mr-4 w-44" />
         <h1 className="text-3xl font-bold text-[#1B57D9]">KeyReply Comparison Dashboard</h1>
       </div>
       <Tabs value={activeTab} onValueChange={setActiveTab}>
@@ -152,7 +160,7 @@ const ComparisonDashboard = () => {
           <Card>
             <CardHeader className="bg-[#1B57D9] text-white">
               <CardTitle className="text-2xl">Summary Comparison</CardTitle>
-              <CardDescription className="text-white opacity-80">Compare KeyReply's features with other provider types</CardDescription>
+              <CardDescription className="text-white opacity-80">Compare KeyReply features with other provider types</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="overflow-x-auto">
@@ -200,6 +208,7 @@ const ComparisonDashboard = () => {
             <Card>
               <CardHeader className="bg-[#1B57D9] text-white">
                 <CardTitle className="text-2xl">{category.name} Comparison</CardTitle>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <CardDescription className="text-white opacity-80">Compare KeyReply's features with {category.name.toLowerCase()}</CardDescription>
               </CardHeader>
               <CardContent>
