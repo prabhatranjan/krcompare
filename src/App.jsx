@@ -147,7 +147,6 @@ const ComparisonDashboard = () => {
     <div className="container mx-auto p-4 bg-white">
       <div className="flex items-center mb-6">
         <img src="/logo.png" alt="KeyReply Logo" className="mr-4 w-44" />
-        <h1 className="text-3xl font-bold text-[#1B57D9]">KeyReply Comparison Dashboard</h1>
       </div>
       <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList className="grid w-full grid-cols-4">
