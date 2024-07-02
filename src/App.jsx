@@ -86,7 +86,7 @@ const ComparisonDashboard = () => {
     platform: {
       'OpenAI': [false, false, true, false, false, false, false, true, false, true, true, false, false, false, true, false, false, false, false],
       'Anthropic': [false, false, true, false, false, false, false, true, false, true, true, false, false, false, true, false, false, false, false],
-      'Cohere': [false, false, true, false, false, false, false, true, false, true, true, false, false, false, true, false, false, false, false],
+      'Meta': [false, false, true, false, false, false, false, true, false, true, true, false, false, false, true, false, false, false, false],
     },
     cloud: {
       'Azure': [false, false, true, false, true, false, true, false, true, true, true, true, false, false, true, false, false, false, false],
