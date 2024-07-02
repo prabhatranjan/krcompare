@@ -49,7 +49,7 @@ const ComparisonDashboard = () => {
       features: [
         { name: 'Evaluations', description: 'Managing quality of LLM outputs' },
         { name: 'Multi-instance', description: 'Highly available Scalable infrastructure based on traffic volume' },
-        { name: 'Speed', description: '0 delay bot response' },
+        { name: 'Speed', description: 'Zero or Customisable delays for bot response' },
         { name: 'LLM Cost Optimization', description: 'Model selection based on use case' },
         { name: 'Multilingual Support', description: 'Support for multiple languages' },
         { name: 'Custom Training', description: 'Ability to train on custom data' },
@@ -66,7 +66,7 @@ const ComparisonDashboard = () => {
     {
       name: 'Communication and Specialization',
       features: [
-        { name: 'Inbound Communication', description: 'Support for handling incoming customer queries and requests' },
+        { name: 'Live chat handover', description: 'Support for handling incoming customer queries and requests by humans' },
         { name: 'Outbound Communication', description: 'Proactive outreach and messaging capabilities' },
         { name: 'Outreach Solutions', description: 'Tools and features for campaign management and customer engagement' },
         { name: 'Healthcare Expertise', description: 'Specialized knowledge and features for healthcare use cases' },
