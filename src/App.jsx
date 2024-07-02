@@ -157,7 +157,7 @@ const ComparisonDashboard = () => {
         </TabsList>
         <TabsContent value="summary">
           <Card>
-            <CardHeader className="bg-[#1B57D9] text-white">
+            <CardHeader className="bg-[#ffffff] text-black">
               <CardTitle className="text-2xl">Summary Comparison</CardTitle>
               <CardDescription className="text-white opacity-80">Compare KeyReply features with other provider types</CardDescription>
             </CardHeader>
@@ -205,7 +205,7 @@ const ComparisonDashboard = () => {
         {categories.map((category) => (
           <TabsContent key={category.id} value={category.id}>
             <Card>
-              <CardHeader className="bg-[#1B57D9] text-white">
+              <CardHeader className="bg-[#ffffff] text-black">
                 <CardTitle className="text-2xl">{category.name} Comparison</CardTitle>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <CardDescription className="text-white opacity-80">Compare KeyReply's features with {category.name.toLowerCase()}</CardDescription>
